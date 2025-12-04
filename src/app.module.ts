@@ -27,6 +27,7 @@ import { EspecialidadesModule } from './especialidades/especialidades.module';
       entities: [__dirname + '*/**/entities/*.{ts|js}'],
       synchronize: true,
       autoLoadEntities: true,
+      ssl: { rejectUnauthorized: false },
     }),
     CitasModule,
     TratamientosModule,
